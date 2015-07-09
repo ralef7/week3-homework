@@ -1,11 +1,16 @@
 
+<p>
+	<%= link_to "/places/new/", "/places/new" %>
+</p>
+
+
 <ul>
 	<% @places.each do |place| %>
 	<li>
 		<p> 
 			<%= link_to place.title, "/places/#{place.id}" %>
 		</p>
-		
+
 		<p>
 			<%= link_to "DELETE #{place.title}", "/places/#{place.id}/delete" %>
 		</p> 

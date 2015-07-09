@@ -9,7 +9,13 @@ class PlacesController < ApplicationController
 	end
 
 	def delete
-		Place.destroy(:id => params["id"])
+		@place = Place.find(params[:id])
+	    @place.destroy
+		redirect_to root_url
+	end
+
+	def new
+		render 'new'
 	end
 	
 end
