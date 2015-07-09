@@ -10,3 +10,320 @@ Started GET "/" for 127.0.0.1 at 2015-07-08 12:01:38 -0500
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/jcohen/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
 Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (97.1ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [1m[35m (66.0ms)[0m  ALTER TABLE "places" ADD "title" varchar(255)
+  [1m[36m (67.0ms)[0m  [1mALTER TABLE "places" ADD "admission_price" integer[0m
+  [1m[35m (66.1ms)[0m  ALTER TABLE "places" ADD "description" text
+  [1m[36m (71.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (88.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (71.1ms)[0m  [1mALTER TABLE "places" ADD "photo_url" text[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (80.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (77.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (62.1ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (69.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (64.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (65.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mPlace Load (0.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "places"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (73.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (60.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (65.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (69.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (65.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (124.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (160.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (68.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (62.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (69.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (66.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (66.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (66.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (65.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (68.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (66.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (87.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mPlace Load (0.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "places"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (125.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (113.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (143.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (68.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (121.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "places"
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (82.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (91.1ms)[0m  DELETE FROM "places"
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (59.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (62.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (65.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (69.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (76.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (109.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (148.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (230.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (151.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (98.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (80.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 12:00:17 -0500
+
+SyntaxError (C:/Users/Robert/Desktop/backup uchicago code/week3-homework/app/controllers/places_controller.rb:6: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/places_controller.rb:6: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (41.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (114.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 12:00:38 -0500
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 36ms
+
+SyntaxError (C:/Users/Robert/Desktop/backup uchicago code/week3-homework/app/views/places/index.html.erb:7: syntax error, unexpected ')', expecting '='
+....title, place.admission_price );@output_buffer.safe_append='
+...                               ^
+C:/Users/Robert/Desktop/backup uchicago code/week3-homework/app/views/places/index.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;  end 
+              ^
+C:/Users/Robert/Desktop/backup uchicago code/week3-homework/app/views/places/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/Robert/Desktop/backup uchicago code/week3-homework/app/views/places/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/places/index.html.erb:7: syntax error, unexpected ')', expecting '='
+  app/views/places/index.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+  app/views/places/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/places/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 12:01:32 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (2.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 546ms (Views: 542.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 12:01:36 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 12:02:08 -0500
+
+ActionController::RoutingError (uninitialized constant ApplicationController::Base):
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (54.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 12:02:33 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (93.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (60.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (77.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (54.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (66.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (62.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "aplaces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "admission_price" integer, "description" text, "photo_url" text) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "places"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (36, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (37, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (38, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (39, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (40, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "places"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "admission_price" integer, "description" varchar(255), "photo_url" text) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "aplaces"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (36, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (37, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (38, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (39, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (40, NULL, NULL, NULL, NULL)
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "aplaces"[0m
+  [1m[35m (107.1ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "aplaces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "admission_price" integer, "description" varchar(255), "photo_url" text) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "places"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (36, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (37, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (38, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (39, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "aplaces" ("id","title","admission_price","description","photo_url") VALUES (40, NULL, NULL, NULL, NULL)
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "places"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "admission_price" integer, "description" varchar(255), "photo_url" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "aplaces"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (36, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (37, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (38, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (39, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "places" ("id","title","admission_price","description","photo_url") VALUES (40, NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "aplaces"[0m
+  [1m[35m (118.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (113.1ms)[0m  DELETE FROM "places"
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (126.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (121.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (65.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (107.1ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (95.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (120.1ms)[0m  [1mcommit transaction[0m

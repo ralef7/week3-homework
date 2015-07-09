@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
-  # Put your routes here
+  root 'places#index'
+  
+  get  '/places' => 'places#index'
 
 end
