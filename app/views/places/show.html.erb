@@ -1,0 +1,10 @@
+<div class="place">
+	<h2><%= @place.title %></h2>
+
+	<p>
+		<span class="admission_price">Price <%= @place.admission_price %></span>
+		<%= @place.description %>
+	</p>
+
+	<%= image_tag @place.photo_url %>
+</div>

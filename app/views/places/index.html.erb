@@ -3,8 +3,12 @@
 	<% @places.each do |place| %>
 	<li>
 		<p> 
-			<%= place.title %>
+			<%= link_to place.title, "/places/#{place.id}" %>
 		</p>
+		
+		<p>
+			<%= link_to "DELETE #{place.title}", "/places/#{place.id}/delete" %>
+		</p> 
 	</li>
  <% end %>
 </ul>
