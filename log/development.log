@@ -327,3 +327,44 @@ Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 1.0ms)
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
   [1m[36m (120.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" DEFAULT VALUES[0m
+  [1m[35m (64.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" DEFAULT VALUES
+  [1m[36m (131.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (95.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 500], ["description", "good place for coffee."], ["photo_url", "http://www.pocketfullofliberty.com/wp-content/uploads/2014/06/Starbucks-Sign.jpg"], ["title", "Starbucks"]]
+  [1m[36m (91.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 4000], ["description", "good place to watch the cubs play  baseball."], ["photo_url", "http://mlb.mlb.com/chc/images/ballpark/480x200_wrigley_field.jpg"], ["title", "Wrigley Field"]]
+  [1m[35m (76.1ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 10000], ["description", "good place to freeze while watching football."], ["photo_url", "http://www.chicagonow.com/lists-that-actually-matter/files/2013/08/sad-cutler.jpg"], ["title", "Soldier Field"]]
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 7500], ["description", "good place to watch the champion Blackhawks."], ["photo_url", "http://www.unitedcenter.com/flash/seating_chart/photos/hockey/section334.jpg"], ["title", "United Center"]]
+  [1m[35m (107.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 2500], ["description", "There is no reason to go here. Stay away."], ["photo_url", "http://www.thenewsburner.com/wp-content/uploads/2012/08/cbot.jpg"], ["title", "Chicago Board of Trade"]]
+  [1m[36m (79.1ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[35mPlace Load (0.0ms)[0m  SELECT "places".* FROM "places"
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 14:29:58 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (2.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 106ms (Views: 69.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-09 14:31:21 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 1.0ms)
