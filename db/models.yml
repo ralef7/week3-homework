@@ -1,9 +1,6 @@
 Place
-  title: string
+  title: text
   admission_price: integer
-  description: string
-  photo_url: string
-  # title: string
-  # admission_price: integer
-  # description: text
-  # photo_url: text
+  description: text
+  photo_url: text
+  

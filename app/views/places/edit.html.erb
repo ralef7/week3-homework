@@ -1,0 +1,12 @@
+<h1>Edit <%= @place.title %></h1>
+
+<form action= <%= "/places/#{@place.id}/update" %>>
+	<input name="title" type="text" value= "<%= @place.title %>">
+	<input name="price" type="text" value= "<%= @place.admission_price %>">
+	<input name="photo_url" type="text" value= "<%= @place.photo_url %>">
+	<input name="description" type="text" value= "<%= @place.description %>">	
+	<input type="submit" value= "Update Place">
+</form>
+
+
+

@@ -66,7 +66,7 @@ By the end of this challenge, you should have these 8 routes, but **not necessar
   get '/places/:id/update' => 'places#update'
 ```
 
-1. At the top of the index page, add a link to add a new place.  The link should navigate to `/places/new`, which must display a form for the user to fill in (title, url, price, and a description).
+1. At the top of the index page, add a link to add a new place.  The link should navigate to `/places/new`, which must display a form f or the user to fill in (title, url, price, and a description).
 1. The form should target the `create` action. When the user submits the form, a new row should be added to the database, and the user should be redirected back to the `index` action to see a refreshed list that now includes their new place.
 1. On the `show` page, add a link to `/places/:id/edit` which should display a form to edit the details of the place.
 1. The edit form should be prefilled with data from the database, and it should trigger the `update` action when the suer clicks Submit.
