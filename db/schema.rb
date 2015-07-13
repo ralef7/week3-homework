@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 0) do
 
   create_table "places", force: true do |t|
-    t.string  "title"
+    t.text    "title",           limit: 255
     t.integer "admission_price"
-    t.string  "description"
-    t.string  "photo_url"
+    t.text    "description",     limit: 255
+    t.text    "photo_url",       limit: 255
   end
 
 end

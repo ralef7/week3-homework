@@ -6,11 +6,9 @@
 		<%= @place.description %>
 	</p>
 
-	<%= image_tag @place.photo_url %>
+	<%= image_tag @place.photo_url, class: 'place-image' %>
 
 	<p>
 		<%= link_to "EDIT", "/places/#{@place.id}/edit" %>
 	</p>
-
-
 </div>

@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-
-  
+ 
   get '/places/:id/update' => 'places#update'
   
   root 'places#index'
-
-
 
   get  '/places' => 'places#index'
 
