@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 0) do
 
   create_table "places", force: true do |t|
-    t.text    "title",           limit: 255
+    t.string  "title"
     t.integer "admission_price"
     t.text    "description",     limit: 255
     t.text    "photo_url",       limit: 255

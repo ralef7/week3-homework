@@ -1,5 +1,5 @@
 Place
-  title: text
+  title: string
   admission_price: integer
   description: text
   photo_url: text
