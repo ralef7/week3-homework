@@ -2,7 +2,10 @@
 	<h2><%= @place.title %></h2> 
 
 	<p>
-		<span>Price <%= number_to_currency(@place.admission_price/100) %></span>
+		<span>Price: <%= number_to_currency(@place.admission_price/100) %></span>	
+	</p>
+	
+	<p>
 		<%= @place.description %>
 	</p>
 

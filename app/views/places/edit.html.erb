@@ -1,7 +1,6 @@
 <h1>Edit <%= @place.title %></h1>
 
 <form action= <%= "/places/#{@place.id}/update" %>>
-	<%= text_field_tag 'photo_url', @place.photo_url %>
 	<input name="title" type="text" value= "<%= @place.title %>">
 	<input name="price" type="text" value= "<%= @place.admission_price %>">
 	<input name="photo_url" type="text" value= "<%= @place.photo_url %>">

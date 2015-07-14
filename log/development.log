@@ -14510,3 +14510,175 @@ Processing by PlacesController#show as HTML
   [1m[35mPlace Load (1.0ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 98 LIMIT 1
   Rendered places/show.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (89.1ms)[0m  DELETE FROM "places"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 500], ["description", "good place for coffee."], ["photo_url", "http://www.pocketfullofliberty.com/wp-content/uploads/2014/06/Starbucks-Sign.jpg"], ["title", "Starbucks"]]
+  [1m[36m (95.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 4000], ["description", "good place to watch the cubs play  baseball."], ["photo_url", "http://mlb.mlb.com/chc/images/ballpark/480x200_wrigley_field.jpg"], ["title", "Wrigley Field"]]
+  [1m[35m (108.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 10000], ["description", "good place to freeze while watching football."], ["photo_url", "http://www.chicagonow.com/lists-that-actually-matter/files/2013/08/sad-cutler.jpg"], ["title", "Soldier Field"]]
+  [1m[36m (82.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 7500], ["description", "good place to watch the champion Blackhawks."], ["photo_url", "http://www.unitedcenter.com/flash/seating_chart/photos/hockey/section334.jpg"], ["title", "United Center"]]
+  [1m[35m (72.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)  [["admission_price", 2500], ["description", "There is no reason to go here. Stay away."], ["photo_url", "http://www.thenewsburner.com/wp-content/uploads/2012/08/cbot.jpg"], ["title", "Chicago Board of Trade"]]
+  [1m[36m (72.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 16:25:11 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (8.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 468ms (Views: 269.2ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-07-14 16:25:16 -0500
+Processing by PlacesController#new as HTML
+  Rendered places/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/submit_new?title=dsalfjsad%3Bklf&price=1300&photo_url=http%3A%2F%2Fwww.thatfunplace.com%2Fimages%2Ffrontfacade.gif&description=fun+place+to+go" for 127.0.0.1 at 2015-07-14 16:25:55 -0500
+Processing by PlacesController#create as HTML
+  Parameters: {"title"=>"dsalfjsad;klf", "price"=>"1300", "photo_url"=>"http://www.thatfunplace.com/images/frontfacade.gif", "description"=>"fun place to go"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "places" ("admission_price", "description", "photo_url", "title") VALUES (?, ?, ?, ?)[0m  [["admission_price", 1300], ["description", "fun place to go"], ["photo_url", "http://www.thatfunplace.com/images/frontfacade.gif"], ["title", "dsalfjsad;klf"]]
+  [1m[35m (86.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms (ActiveRecord: 91.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 16:25:56 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/106" for 127.0.0.1 at 2015-07-14 16:25:59 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"106"}
+  [1m[35mPlace Load (1.0ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 106 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (141.1ms)
+Completed 200 OK in 274ms (Views: 185.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/106/edit" for 127.0.0.1 at 2015-07-14 16:26:46 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"106"}
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 106]]
+  Rendered places/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 89ms (Views: 80.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/106/update?photo_url=http%3A%2F%2Fwww.thatfunplace.com%2Fimages%2Ffrontfacade.gif&title=Fun+place+to+go&price=1300&photo_url=http%3A%2F%2Fwww.thatfunplace.com%2Fimages%2Ffrontfacade.gif&description=fun+place+to+go" for 127.0.0.1 at 2015-07-14 16:27:01 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"photo_url"=>"http://www.thatfunplace.com/images/frontfacade.gif", "title"=>"Fun place to go", "price"=>"1300", "description"=>"fun place to go", "id"=>"106"}
+  [1m[35mPlace Load (0.0ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 106]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  UPDATE "places" SET "title" = ? WHERE "places"."id" = 106  [["title", "Fun place to go"]]
+  [1m[36m (302.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/places/106
+Completed 302 Found in 327ms (ActiveRecord: 305.2ms)
+
+
+Started GET "/places/106" for 127.0.0.1 at 2015-07-14 16:27:01 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"106"}
+  [1m[35mPlace Load (0.0ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 106 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/106" for 127.0.0.1 at 2015-07-14 16:27:30 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"106"}
+  [1m[36mPlace Load (0.0ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 106 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/106/edit" for 127.0.0.1 at 2015-07-14 16:27:33 -0500
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"106"}
+  [1m[35mPlace Load (1.0ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 106]]
+  Rendered places/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/106/update?title=not+fun&price=1300&photo_url=http%3A%2F%2Fwww.thatfunplace.com%2Fimages%2Ffrontfacade.gif&description=nope" for 127.0.0.1 at 2015-07-14 16:27:45 -0500
+Processing by PlacesController#update as HTML
+  Parameters: {"title"=>"not fun", "price"=>"1300", "photo_url"=>"http://www.thatfunplace.com/images/frontfacade.gif", "description"=>"nope", "id"=>"106"}
+  [1m[36mPlace Load (0.0ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 106]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "places" SET "description" = ?, "title" = ? WHERE "places"."id" = 106[0m  [["description", "nope"], ["title", "not fun"]]
+  [1m[35m (299.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/places/106
+Completed 302 Found in 325ms (ActiveRecord: 301.2ms)
+
+
+Started GET "/places/106" for 127.0.0.1 at 2015-07-14 16:27:45 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"106"}
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 106 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 16:27:52 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/106/delete" for 127.0.0.1 at 2015-07-14 16:27:55 -0500
+Processing by PlacesController#delete as HTML
+  Parameters: {"id"=>"106"}
+  [1m[36mPlace Load (0.0ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 106]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = ?[0m  [["id", 106]]
+  [1m[35m (98.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms (ActiveRecord: 100.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 16:27:55 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/104" for 127.0.0.1 at 2015-07-14 16:28:00 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"104"}
+  [1m[35mPlace Load (1.0ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 104 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/104" for 127.0.0.1 at 2015-07-14 16:29:02 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"104"}
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = 104 LIMIT 1[0m
+  Rendered places/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 52ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/places/101" for 127.0.0.1 at 2015-07-14 16:29:57 -0500
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mPlace Load (1.0ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = 101 LIMIT 1
+  Rendered places/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 71ms (Views: 49.0ms | ActiveRecord: 4.0ms)
